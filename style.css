@@ -84,6 +84,9 @@ p {
   background-color: hsl(33, 100%, 98%);
   border-radius: 0.8rem;
 }
+.card-body:hover{
+  background-color: transparent;
+}
 
 .dark-card-body {
   cursor: pointer;
