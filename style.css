@@ -212,6 +212,9 @@ hr {
   .btn {
     margin: 0 0 0 5rem;
   }
+  h3 {
+    font-size: 1rem;
+  }
   .card-body {
     height: auto;
     width: 18rem;
