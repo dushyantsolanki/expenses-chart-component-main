@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(27, 66%, 92%);
+}
+.dark-body {
+  background-color: hsl(217, 54%, 11%);
+}
+.full-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: medium;
+}
+h1 {
+  font-family: "DM Sans", sans-serif;
+}
+h2 {
+  font-family: "DM Sans", sans-serif;
+}
+h3 {
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+}
+h5 {
+  font-weight: 200;
+  font-family: "DM Sans", sans-serif;
+}
+
+p {
+  color: rgba(112, 111, 111, 0.696);
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25rem;
+  height: 5rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.8rem;
+  color: white;
+}
+.dark-header {
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(101, 98, 98, 0.233);
+}
+.btn {
+  margin: 0 0 0 11.8rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.dark-btn {
+  background-color: white;
+  box-shadow: 0px 0px 20px 5px hsl(27, 66%, 92%);
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 10px hsl(27, 66%, 92%);
+}
+.card-body {
+  box-sizing: border-box;
+  padding: 1.7rem 1.5rem;
+  margin-top: 1rem;
+  height: auto;
+  width: 25rem;
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 0.8rem;
+}
+
+.dark-card-body {
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(101, 98, 98, 0.233);
+  color: white;
+}
+
+.chart {
+  margin-top: 3rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.mon {
+  height: 2.6rem;
+  width: 2.3rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+}
+.bar-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hovo:hover {
+  cursor: pointer;
+  transform: scaleY(1.3);
+  transition-duration: 0.3s;
+  transform-origin: bottom;
+  background-color: hsl(10, 100%, 49%);
+}
+.colo:hover {
+  cursor: pointer;
+  transform: scaleY(1.2);
+  transition-duration: 0.5s;
+  transform-origin: bottom;
+  background-color: hsl(186, 96%, 44%);
+}
+.tue {
+  height: 5rem;
+  width: 2.3rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+}
+.wed {
+  height: 8rem;
+  width: 2.3rem;
+  background-color: hsl(186, 34%, 60%);
+  border-radius: 0.3rem;
+}
+.thu {
+  height: 4.5rem;
+  width: 2.3rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+}
+.fri {
+  height: 4rem;
+  width: 2.3rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+}
+.sat {
+  height: 6rem;
+  width: 2.3rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+}
+.sun {
+  height: 4.2rem;
+  width: 2.3rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+}
+.week-text {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.t {
+  margin: 0.3rem 0.2rem 2rem 0.2rem;
+}
+.x {
+  margin: 0 0.47rem 0 0;
+}
+hr {
+  height: 0.1rem;
+  border-radius: 1rem;
+  background-color: hsl(27, 66%, 92%);
+  border-style: none;
+  margin-top: -0.8rem;
+  margin-bottom: 1.5rem;
+}
+.body-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/*  add CSS Media Query  */
+
+@media (max-width: 575px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 18rem;
+    height: 4.5rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 0.8rem;
+    color: white;
+  }
+
+  .btn {
+    margin: 0 0 0 5rem;
+  }
+  .card-body {
+    height: auto;
+    width: 18rem;
+    padding: 1.7rem 1rem;
+  }
+  .mon {
+    height: 2rem;
+    width: 1.7rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 0.2rem;
+  }
+  .tue {
+    height: 4.4rem;
+    width: 1.7rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 0.2rem;
+  }
+  .wed {
+    height: 7.7rem;
+    width: 1.7rem;
+    background-color: hsl(186, 34%, 60%);
+    border-radius: 0.2rem;
+  }
+  .thu {
+    height: 3.9rem;
+    width: 1.7rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 0.2rem;
+  }
+  .fri {
+    height: 3.3rem;
+    width: 1.7rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 0.2rem;
+  }
+  .sat {
+    height: 5.7rem;
+    width: 1.7rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 0.2rem;
+  }
+  .sun {
+    height: 3.6rem;
+    width: 1.7rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 0.2rem;
+  }
+}
